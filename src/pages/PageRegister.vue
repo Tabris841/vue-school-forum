@@ -169,7 +169,7 @@ export default {
 
     successRedirect() {
       const redirectTo = this.$route.query.redirecTo || { name: 'Home' };
-      this.route.push(redirectTo);
+      this.$router.push(redirectTo);
     }
   },
 
